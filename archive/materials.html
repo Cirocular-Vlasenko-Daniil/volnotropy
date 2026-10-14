@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>волнотропы</title>
+<meta name="description" content="волнотропы — внеформатные музыкальные и культурные события в Краснодаре и на Юге России.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&family=JetBrains+Mono:wght@400&display=swap">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABkElEQVR42u1ZwRHEIAhUJtWkiHSTqtJNikg7udfNOBknKhIV3P3c6wTWBQk4BwAAoADbcd3bcd0gQZgE0hT8F+eqIeDcV/8FGWoVIEUCaa8JUxMgQYJ6AqZQQOqWa1QABYAAA0Uu7BE+JyBsR5+/GuGln5lzX/12XHfNrZTarrHlc42HgZWQwnGOQ7ooAWGgpQHXOhvayrFdqzTf8ssrlTaShP7PSxFEOX+UyOeWn7ol51HOIaNW+ZyLSflOHNlY+mCiEWpAz3QiC0HXzBOpVaHrkf9QQEaKeG25/3bznA516dF+jkQiWQioJg3M1ACu/9SzAjtMhPpj0bLDc60mQtzvb22B/+PAVHhG2b8ScO6rt94TRBuhGZ6/mP9k+a1/xhAb19PXI6eegef4Ri3k31pNz9H6mx9Ntzc5GyPpHURqzulbPX9cFXAIie0ZuhIgtSfkLFBStv3Iq2uOD6X2FudsPXXNWuERbh/zABDQkYCUvLW00lDACOsp1QrQPj9ACoy2rYUCNBMw034RAADABH6KJx3mJUtI3QAAAABJRU5ErkJggg==">
+<style>
+:root{
+  --paper:#FFFFFF;
+  --tint:#F5F8FA;
+  --ink:#232A2F;
+  --ink-mid:#66727B;
+  --ink-faint:#96A2AA;
+  --rule:#E2E8EC;
+  --rule-strong:#CBD5DB;
+  --accent:#2F8FCC;
+  --accent-deep:#1F6D9F;
+  --pad:2.5rem;
+  --logo:url("data:image/png;base64,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");
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E1418;
+    --tint:#141C21;
+    --ink:#DCE4E9;
+    --ink-mid:#8E9BA4;
+    --ink-faint:#65727A;
+    --rule:#1F282E;
+    --rule-strong:#2E3A42;
+    --accent:#5FB6EA;
+    --accent-deep:#8ACFF8;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E1418;
+  --tint:#141C21;
+  --ink:#DCE4E9;
+  --ink-mid:#8E9BA4;
+  --ink-faint:#65727A;
+  --rule:#1F282E;
+  --rule-strong:#2E3A42;
+  --accent:#5FB6EA;
+  --accent-deep:#8ACFF8;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Golos Text","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:16.5px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:var(--accent-deep);text-decoration:underline;text-underline-offset:.18em}
+.mono{
+  font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;
+  font-variant-numeric:tabular-nums;
+}
+:focus-visible{outline:1px solid var(--accent);outline-offset:2px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:.6rem;top:.6rem;background:var(--paper);padding:.4rem .7rem;border:1px solid var(--accent);z-index:9}
+
+/* ---------- сетка: всё прижато к левому краю ---------- */
+main{padding-left:var(--pad);padding-bottom:1px}
+.col{max-width:42rem;padding-right:1.5rem}
+
+/* ---------- шапка ---------- */
+.top{
+  position:sticky;top:0;z-index:5;background:var(--paper);
+  border-bottom:1px solid var(--rule);
+  display:flex;align-items:center;justify-content:space-between;gap:1.25rem;
+  padding:.8rem 1.5rem .8rem var(--pad);
+}
+.brand{display:flex;align-items:center;gap:.55rem;color:var(--ink)}
+.brand:hover{color:var(--ink);text-decoration:none}
+.brand:hover .mark{color:var(--accent-deep)}
+.mark{
+  display:block;width:31px;height:28px;flex:none;
+  color:var(--accent);background-color:currentColor;
+  -webkit-mask:var(--logo) center/contain no-repeat;
+          mask:var(--logo) center/contain no-repeat;
+}
+.wordmark{font-size:.98rem;font-weight:500;letter-spacing:.01em}
+.nav{display:flex;gap:1.4rem;flex-wrap:wrap;justify-content:flex-end}
+.nav a{color:var(--ink-mid)}
+.nav a:hover{color:var(--accent);text-decoration:none}
+.nav a[aria-current="page"]{color:var(--ink)}
+
+/* ---------- заголовок страницы ---------- */
+.strap{font-size:1rem;font-weight:400;line-height:1.5;color:var(--ink-mid);margin:2.1rem 0 0;max-width:29rem}
+
+/* ---------- лента закреплённого ---------- */
+.eyebrow{color:var(--ink-faint);margin:2.4rem 0 .7rem}
+.pins{
+  display:flex;align-items:flex-start;overflow-x:auto;scroll-snap-type:x proximity;
+  padding:1px 1.5rem 1rem 0;margin:0;
+}
+.pins::-webkit-scrollbar{height:5px}
+.pins::-webkit-scrollbar-thumb{background:var(--rule-strong)}
+.pins::-webkit-scrollbar-track{background:var(--rule)}
+.card{
+  flex:none;width:205px;aspect-ratio:1/1;
+  display:flex;flex-direction:column;justify-content:space-between;
+  padding:.85rem .9rem;
+  border:1px solid var(--rule-strong);background:var(--tint);
+  color:var(--ink);scroll-snap-align:start;
+  transition:border-color .15s ease,color .15s ease,background .15s ease;
+}
+.card + .card{margin-left:-1px}
+.card:hover{border-color:var(--accent);color:var(--accent);background:var(--paper);text-decoration:none;position:relative;z-index:1}
+.cardtop{display:flex;flex-direction:column;min-height:0}
+.card .k{color:var(--ink-faint)}
+.card .t{font-size:1rem;line-height:1.32;margin-top:.55rem}
+.card .d{color:var(--ink-faint)}
+
+/* ---------- оглавление ---------- */
+.reg-head{
+  display:flex;justify-content:space-between;align-items:baseline;
+  color:var(--ink-faint);padding-bottom:.5rem;border-bottom:1px solid var(--rule-strong);margin-top:2.4rem;
+}
+.row{
+  display:grid;grid-template-columns:7rem 1fr;gap:.15rem 1.2rem;align-items:baseline;
+  padding:.7rem 0;border-bottom:1px solid var(--rule);color:var(--ink);
+}
+.row:hover{text-decoration:none}
+.row .date{color:var(--ink-faint)}
+.row .name{font-size:1rem;line-height:1.35;transition:color .15s ease}
+.row:hover .name{color:var(--accent)}
+
+/* ---------- материалы подряд ---------- */
+.entries{margin-top:3.5rem;border-top:1px solid var(--rule-strong)}
+.entry{padding:2.4rem 0 2.8rem;border-bottom:1px solid var(--rule);scroll-margin-top:3.6rem}
+.entry:target .meta a{color:var(--accent)}
+.meta{display:flex;gap:1rem;color:var(--ink-faint);margin:0}
+.meta a{color:var(--ink-faint)}
+.meta a:hover{color:var(--accent);text-decoration:none}
+.entry h2{
+  font-size:clamp(1.4rem,3.4vw,1.72rem);font-weight:500;line-height:1.22;
+  letter-spacing:-.015em;text-wrap:balance;margin:.5rem 0 0;max-width:28rem;
+}
+.entry h2 a{color:var(--ink)}
+.entry h2 a:hover{color:var(--accent);text-decoration:none}
+.lead{font-size:1.05rem;color:var(--ink-mid);margin:.7rem 0 0;max-width:30rem}
+.prose{display:flex;flex-direction:column;gap:1.05rem;margin-top:1.6rem;max-width:33rem}
+.prose p{margin:0}
+.spec{display:flex;flex-direction:column;gap:1rem;margin:.2rem 0}
+.spec dt{color:var(--ink-faint);margin-bottom:.1rem}
+.spec dd{margin:0}
+.times{display:flex;flex-direction:column;gap:.4rem;margin:.1rem 0}
+.times .t{color:var(--ink-faint);margin-right:.85rem}
+.label{color:var(--ink);font-weight:500;margin:.8rem 0 -.45rem}
+.list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.65rem}
+.list li{padding-left:1.1rem;position:relative}
+.list li::before{content:"";position:absolute;left:0;top:.68em;width:5px;height:5px;background:var(--accent)}
+.note{color:var(--ink-mid)}
+.act{
+  display:inline-block;align-self:flex-start;margin-top:.4rem;
+  padding:.45rem 1rem;border:1px solid var(--accent);color:var(--accent);
+}
+.act:hover{background:var(--accent);color:var(--paper);text-decoration:none}
+.source{margin-top:1.6rem;max-width:33rem}
+.up{display:inline-block;margin-top:2.6rem}
+
+/* ---------- о нас ---------- */
+.about{margin-top:2rem}
+.about .prose{margin-top:1.3rem}
+.about h1{font-size:clamp(1.55rem,4.4vw,2rem);font-weight:500;line-height:1.2;letter-spacing:-.015em;margin:.5rem 0 0}
+.about .first{font-size:1.05rem}
+
+/* ---------- подвал ---------- */
+.foot{
+  display:flex;justify-content:space-between;gap:.5rem 1.6rem;flex-wrap:wrap;
+  color:var(--ink-faint);
+  border-top:1px solid var(--rule);margin-top:4rem;padding:1.1rem 1.5rem 2.6rem var(--pad);
+}
+.foot a{color:var(--ink-mid)}
+.foot a:hover{color:var(--accent);text-decoration:none}
+.foot .set{display:flex;gap:1.4rem;flex-wrap:wrap}
+
+@media (max-width:600px){
+  :root{--pad:1.25rem}
+  body{font-size:16px}
+  .row{grid-template-columns:1fr}
+  .row .date{order:2;margin-top:.1rem}
+  .row .name{order:1}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip mono" href="#main">к содержанию</a>
+
+<header class="top">
+  <a class="brand" href="#/">
+    <span class="mark" aria-hidden="true"></span>
+    <span class="wordmark">волнотропы</span>
+  </a>
+  <nav class="nav mono">
+    <a href="#/" data-nav="index">материалы</a>
+    <a href="#/about" data-nav="about">о нас</a>
+    <a href="https://t.me/volnotropy" target="_blank" rel="noopener">телеграм</a>
+  </nav>
+</header>
+
+<main id="main"></main>
+
+<noscript>
+  <div style="padding:2rem 2.5rem;max-width:42rem">
+    <p>волнотропы — внеформатные музыкальные и культурные события в Краснодаре и на Юге России.</p>
+    <p>Все материалы и анонсы — в <a href="https://t.me/volnotropy">телеграм-канале</a>. Связь: <a href="mailto:volnotropy@yandex.com">volnotropy@yandex.com</a></p>
+  </div>
+</noscript>
+
+<footer class="foot mono">
+  <span>© 2026 волнотропы · краснодар</span>
+  <span class="set">
+    <a href="https://t.me/volnotropy" target="_blank" rel="noopener">телеграм</a>
+    <a href="https://volnotropy.eo.page/main" target="_blank" rel="noopener">рассылка</a>
+    <a href="mailto:volnotropy@yandex.com">почта</a>
+  </span>
+</footer>
+
+<script>
+/* ==========================================================================
+   ЗАКРЕПЛЁННОЕ — лента карточек наверху главной.
+   Просто перечислите slug'и материалов в нужном порядке.
+   ========================================================================== */
+const PINNED = ['vt01', 'reunion', 'idm-chess', 'drone-guide', 'drone-day'];
+
+/* ==========================================================================
+   МАТЕРИАЛЫ — всё содержимое сайта живёт здесь.
+   Все материалы выводятся на главной целиком, один за другим, сверху вниз.
+   Чтобы добавить новый, скопируйте любой блок и положите его первым в массив.
+   Поля: slug (якорь), kind (рубрика), date (ГГГГ-ММ-ДД), title,
+   lead (подзаголовок, необязательно), body (блоки),
+   cta (кнопка, необязательно), src (пост в тг).
+   Блоки body: строка = абзац · {facts:[[ключ,значение]]} · {tt:[[время,кто]]}
+               {ul:[...]} · {note:'...'} · {label:'...'}
+   ========================================================================== */
+const MATERIALS = [
+  {
+    slug: 'idm-chess-itogi',
+    kind: 'репортаж',
+    date: '2026-08-23',
+    title: '22 августа — IDM Шахматы',
+    lead: 'Спасибо всем, кто пришёл на летник «Радуги Кофе» и разделил с нами эту партию.',
+    body: [
+      'Турнир, маркет физических носителей и лекция состоялись. Игра продолжается — следите за анонсами.',
+      'Как всё было задумано и что за чем шло — <a href="#/m/idm-chess">в анонсе события</a> ниже.',
+      'волнотропы х <a href="https://t.me/radugacoffeekrd" target="_blank" rel="noopener">Радуга Кофе</a>'
+    ],
+    src: 'https://t.me/volnotropy/98'
+  },
+  {
+    slug: 'reunion',
+    kind: 'статья',
+    date: '2026-08-15',
+    title: 'Партия, которую слышно',
+    lead: 'Джон Кейдж vs Марсель Дюшан — Reunion. Торонто, 5 марта 1968 года.',
+    body: [
+      '5 марта 1968 года в Торонто состоялась партия в шахматы, которая одновременно была концертом. За доской встретились Джон Кейдж и Марсель Дюшан — два художника, для которых важнейшими инструментами искусства стали случайность, система и отказ от привычного представления об авторстве.',
+      'Шахматная доска была спроектирована Лоуэллом Кроссом, исследователем электронной музыки и одним из первых разработчиков лазерных световых систем. При замыкании шахматными фигурами определённых контактов встроенные контактные микрофоны запускали звуковые события. Система распределяла звук по нескольким каналам, связанным с расположенными вокруг зала динамиками.',
+      'Музыку в реальном времени создавали Дэвид Тюдор, Гордон Мамма, Дэвид Берман и Кросс. Однако заранее написанной композиции не существовало: последовательность звуков определялась самой шахматной партией.',
+      'Название перформанса — Reunion — отсылало не только к встрече двух художников, но и к их давнему знакомству. Кейдж около двадцати лет интересовался Дюшаном и в конце концов попросил его научить себя шахматам. Дюшан к тому времени уже был известен не только как один из наиболее влиятельных художников XX века, но и как серьёзный шахматист. В определённый период он практически оставил художественную практику ради игры, участвовал в международных соревнованиях за сборную Франции.',
+      'На сцене встретились две разные формы интеллектуальной игры. Шахматы Дюшана были построены на расчёте, стратегии и соревновании. Экспериментальная музыка Кейджа, напротив, всё чаще обращалась к неопределённости и процессам, результат которых не может быть полностью предсказан автором.',
+      'Сегодня этот эпизод интересен именно потому, что результат шахматной партии здесь оказался второстепенным. Reunion предлагал другой способ понимать музыкальное произведение: не как заранее созданную последовательность звуков, а как систему правил, внутри которой произведение возникает в процессе исполнения.',
+      'На нашем турнире шахматная партия тоже не сводится к вопросу о том, кто поставит мат. Победа остаётся частью игры, но не единственным её результатом. Важнее сам процесс: музыка становится частью партии, партия — частью вечера, а каждый ход меняет происходящее вокруг. Не обязательно играть идеально или быть опытным шахматистом — достаточно наблюдать, слушать, принимать решения, ошибаться и видеть, как из множества отдельных ходов складывается общее событие.',
+      {ul: [
+        '<a href="https://www.youtube.com/watch?v=t4Khq9I4w_g" target="_blank" rel="noopener">Послушать перформанс Reunion</a>',
+        '<a href="https://data-johncage.org/reunion/app/index.html" target="_blank" rel="noopener">Прочувствовать опыт Reunion на себе</a>'
+      ]}
+    ],
+    src: 'https://t.me/volnotropy/93'
+  },
+  {
+    slug: 'idm-chess',
+    kind: 'событие',
+    date: '2026-08-05',
+    title: 'IDM Шахматы',
+    lead: 'Турнир · музыка · маркет физических аудионосителей · лекция.',
+    body: [
+      {facts: [
+        ['когда', '22 августа 2026, 17:00'],
+        ['где', '«<a href="https://t.me/radugacoffeekrd" target="_blank" rel="noopener">Радуга Кофе</a>», Зиповская, 5 лит Г, Краснодар'],
+        ['вход', 'свободный'],
+        ['селекторы', '<a href="https://t.me/freshairzone" target="_blank" rel="noopener">fly</a>, <a href="https://t.me/tape_str_y" target="_blank" rel="noopener">lama jumpa</a> (tape-set), <a href="https://t.me/channel_ventris" target="_blank" rel="noopener">crepitus ventris</a>']
+      ]},
+      'Совместно с «Радугой Кофе» мы проводим лайтовый шахматный турнир под braindance-сопровождение аудио-селекторов из Краснодара. Андрей Гетманов расскажет, что связывает шахматы и электронную музыку, а на маркете физических носителей можно будет приобрести пластинки и кассеты.',
+      'Braindance — направление электронной музыки, сформировавшееся в середине 1990-х вокруг британского лейбла Rephlex Records, практически одновременно с появлением термина IDM. В его основе — сочетание влияний acid techno, экспериментальной электроники и сложной ритмики: аналоговые синтезаторы, брейкбиты, драм-машины и музыка, одинаково располагающая как к вдумчивому прослушиванию, так и к движению.',
+      'Шахматы и интеллектуальная электронная музыка развивались в разных культурных контекстах, однако их объединяет внимание к структуре, вариативности и поиску нестандартных решений. Игра, основанная на стратегии и расчёте, встретится с музыкой, построенной на сложной ритмике, экспериментальной форме и внимании к мельчайшим деталям.',
+      {label: 'формат'},
+      'Простая турнирная сетка. Ограничение по времени мягкое — час, пока играется очередной диджей-сет. Требований по рейтингу и опыту нет, сыграть может любой желающий. Если вы пока не знаете, будете ли участвовать, просто приходите: будут свободные доски, за которыми можно сыграть вне турнира. Победителей ждут призы от наших коллег из «Радуги Кофе».',
+      {label: 'маркет'},
+      'Продавцами выступят местные коллекционеры — современный андеграунд и актуальные релизы российских лейблов, старые находки, экспериментальная электроника от приглашённого гостя из северной столицы <a href="https://t.me/shum_dushi" target="_blank" rel="noopener">PTOS</a>, олдовый нью-эйдж из нашего дистро и кассеты от <a href="https://t.me/ugoloksemi" target="_blank" rel="noopener">сёмы</a>, где шансон от экспериментальной электроники разделяет один шаг. Жанровые границы — от экспериментальной и танцевальной электроники до рок-музыки.',
+      'Маркет — отличная возможность узнать больше о локальной музыке, найти что-то новое, что не подсунут алгоритмы, и поддержать местных артистов.',
+      {label: 'тайм-тейбл'},
+      {tt: [
+        ['17:00', 'Crepitus Ventris'],
+        ['17:15', 'начало шахматного турнира'],
+        ['18:15', 'Lama Jumpa'],
+        ['19:15', 'Fly']
+      ]}
+    ],
+    src: 'https://t.me/volnotropy/91'
+  },
+  {
+    slug: 'collab',
+    kind: 'колл',
+    date: '2026-06-19',
+    title: 'Открыты для коллабораций',
+    lead: 'Саунд-артистам, фотографам, дизайнерам, видеографам, художникам, кураторам, писателям, перформерам, крафтерам, лекторам.',
+    body: [
+      'Вы увлекаетесь чем-то за рамками популярного, и вам есть что рассказать и показать. Возможно, у вас есть интересная площадка или клёвая задумка, но её сложно реализовать самостоятельно.',
+      'Мы ждём ваши заявки на почту <a href="mailto:volnotropy@yandex.com">volnotropy@yandex.com</a> или в личные сообщения <a href="https://t.me/cirocular_now" target="_blank" rel="noopener">@cirocular_now</a>.',
+      'Давайте реализуем крутые проекты вместе.'
+    ],
+    src: 'https://t.me/volnotropy/88'
+  },
+  {
+    slug: 'drone-guide',
+    kind: 'гид',
+    date: '2026-06-09',
+    title: 'Дроун: с чего начать',
+    lead: 'Плейлисты, книги и фильмы, которые помогут глубже погрузиться в тему. Материалы собрал Андрей Гетманов.',
+    body: [
+      'В <a href="https://www.youtube.com/watch?v=2lrrqq3NXgk&amp;list=PLtNIOAPzIOjzobrk7p7O5WfxXHsXEog6d" target="_blank" rel="noopener">плейлисте на YouTube</a> есть как классические композиции, так и современные альбомы и треки, испытавшие влияние дроуна.',
+      'В <a href="https://music.yandex.ru/playlists/958a6492-d71a-08b6-a485-4aa84664751b" target="_blank" rel="noopener">плейлисте на Яндекс Музыке</a> собраны другие интересные треки, большая часть из которых написана современными российскими музыкантами.',
+      {label: 'книги и фильмы'},
+      {ul: [
+        '<a href="https://vk.com/video-227359928_456239023" target="_blank" rel="noopener">Sisters with transistors / Электросёстры</a> (2020) — документальный фильм о женщинах, стоявших у истоков авангардной электроники.',
+        '<a href="https://vkvideo.ru/video-202346699_456242014" target="_blank" rel="noopener">Tones, Drones and Arpeggios: The Magic of Minimalism</a> (2018) — фильм в двух частях, в котором Чарльз Хейзлвуд общается с культовыми композиторами XX века: Терри Райли, Филиппом Глассом, Ла Монте Янгом и Стивом Райхом.',
+        '<a href="https://monoskop.org/images/3/39/Keydzh_Dzhon_Tishina_lektsii_i_stati_2012.pdf" target="_blank" rel="noopener">Джон Кейдж — «Тишина. Лекции и статьи»</a> (2012) — основополагающий сборник эссе в переводе на русский язык.',
+        '<a href="https://www.agosto-foundation.org/sites/default/files/upload/oliveros_pauline_deep_listening_a_composers_sound_practice_2005.pdf" target="_blank" rel="noopener">Pauline Oliveros — «Deep Listening: A Composer’s Sound Practice»</a> (2005) — гайд по глубокому слушанию от его изобретательницы.',
+        '<a href="https://vk.com/wall-28430730_512" target="_blank" rel="noopener">Harry Sword — «Monolithic Undertow: In Search of Sonic Oblivion»</a> (2021) — глубокое погружение в историю дроуна.'
+      ]},
+      {note: 'Ещё больше материалов и событий — уже скоро. Чтобы не пропустить анонсы, подписывайтесь на нашу <a href="https://volnotropy.eo.page/main" target="_blank" rel="noopener">тайную емейл-рассылку</a>.'}
+    ],
+    src: 'https://t.me/volnotropy/87'
+  },
+  {
+    slug: 'vt01',
+    kind: 'релиз',
+    date: '2026-06-02',
+    title: 'VT01 — первый кассетный сборник',
+    lead: 'И запись аудио-перформанса с Международного дня Дроуна.',
+    body: [
+      'Записал и почувствовал в джем-сейшне Андрей <a href="https://t.me/silentexp" target="_blank" rel="noopener">Silent eXperiment</a>. Его трек вы так же можете найти на нашем первом кассетном сборнике <a href="https://t.me/cassette_dvizh/71?single" target="_blank" rel="noopener">VT01</a>.',
+      'Несколько кассет всё ещё ищут новых владельцев. Если вы хотите поддержать внеформатных музыкантов с Юга России — пишите <a href="https://t.me/cirocular_now" target="_blank" rel="noopener">@cirocular_now</a>.',
+      {facts: [['VT01', 'кассета, 600 ₽']]}
+    ],
+    cta: {label: 'Заказать кассету — 600 ₽', href: 'https://t.me/cirocular_now'},
+    src: 'https://t.me/volnotropy/85'
+  },
+  {
+    slug: 'drone-day',
+    kind: 'репортаж',
+    date: '2026-06-01',
+    title: 'Международный день Дроуна',
+    lead: '30 мая, Чайная Шаманика. Как это было.',
+    body: [
+      'Идея совместить в одном камерном ивенте листенинг-сессию авангардной музыки, лекцию, арт-практику, совмещённую с перформансом и джем-сейшном, могла показаться безумной даже в концептуальном плане. Мы очень переживали, но всё же, как нам кажется, всё получилось, и событие обрело гармоничную форму 30 мая в <a href="https://t.me/chainaya_shamanika" target="_blank" rel="noopener">Чайной Шаманике</a>.',
+      'Мы благодарны всем, кто, несмотря на непогоду, пришёл и разделил с нами гул. Изначально мы и не могли рассчитывать, что это событие станет для нас (и, надеемся, что для вас тоже) настолько эмоционально наполненным и грандиозным.',
+      'Мы не прощаемся.'
+    ],
+    src: 'https://t.me/volnotropy/75'
+  }
+];
+
+/* ---------- вспомогательное ---------- */
+const MONTHS = ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
+const pad2 = n => String(n).padStart(2, '0');
+const num  = d => { const [y,m,dd] = d.split('-'); return pad2(dd) + '.' + m + '.' + y; };
+const long = d => { const [y,m,dd] = d.split('-'); return Number(dd) + ' ' + MONTHS[Number(m)-1] + ' ' + y; };
+
+function block(b){
+  if (typeof b === 'string') return '<p>' + b + '</p>';
+  if (b.label) return '<p class="label">' + b.label + '</p>';
+  if (b.note)  return '<p class="note">' + b.note + '</p>';
+  if (b.ul)    return '<ul class="list">' + b.ul.map(i => '<li>' + i + '</li>').join('') + '</ul>';
+  if (b.facts) return '<dl class="spec">' + b.facts.map(([k,v]) =>
+      '<div><dt class="mono">' + k + '</dt><dd>' + v + '</dd></div>').join('') + '</dl>';
+  if (b.tt)    return '<div class="times">' + b.tt.map(([t,a]) =>
+      '<span><span class="t mono">' + t + '</span> ' + a + '</span>').join('') + '</div>';
+  return '';
+}
+
+/* ---------- главная: оглавление + все материалы целиком ---------- */
+function viewIndex(){
+  const cards = PINNED
+    .map(slug => MATERIALS.find(m => m.slug === slug))
+    .filter(Boolean)
+    .map(m =>
+      '<a class="card" href="#/m/' + m.slug + '">'
+      + '<span class="cardtop"><span class="k mono">' + m.kind + '</span>'
+      + '<span class="t">' + m.title + '</span></span>'
+      + '<span class="d mono">' + num(m.date) + '</span>'
+      + '</a>').join('');
+
+  const rows = MATERIALS.map(m =>
+      '<a class="row" href="#/m/' + m.slug + '">'
+      + '<span class="date mono">' + num(m.date) + '</span>'
+      + '<span class="name">' + m.title + '</span>'
+      + '</a>').join('');
+
+  const entries = MATERIALS.map(m =>
+      '<article class="entry" id="m-' + m.slug + '">'
+      + '<p class="meta mono"><span>' + m.kind + '</span>'
+      + '<a href="#/m/' + m.slug + '">' + long(m.date) + '</a></p>'
+      + '<h2><a href="#/m/' + m.slug + '">' + m.title + '</a></h2>'
+      + (m.lead ? '<p class="lead">' + m.lead + '</p>' : '')
+      + '<div class="prose">' + m.body.map(block).join('')
+      + (m.cta ? '<a class="act" href="' + m.cta.href + '" target="_blank" rel="noopener">' + m.cta.label + '</a>' : '')
+      + '</div>'
+      + '<p class="source mono"><a href="' + m.src + '" target="_blank" rel="noopener">опубликовано в телеграме →</a></p>'
+      + '</article>').join('');
+
+  return '<div class="col"><h1 class="strap">Внеформатные музыкальные и культурные события в Краснодаре и на Юге России.</h1></div>'
+    + '<p class="eyebrow mono">закреплено</p>'
+    + '<div class="pins">' + cards + '</div>'
+    + '<div class="col">'
+    + '<div class="reg-head mono"><span>содержание</span><span>' + MATERIALS.length + '</span></div>'
+    + rows
+    + '<div class="entries">' + entries + '</div>'
+    + '<p><a class="up mono" href="#/">↑ наверх</a></p>'
+    + '</div>';
+}
+
+function viewAbout(){
+  return '<div class="col about">'
+    + '<h1>о нас</h1>'
+    + '<div class="prose">'
+    + '<p class="first">волнотропы — сообщество из Краснодара. Мы делаем внеформатные музыкальные и культурные события на Юге России.</p>'
+    + '<p>Листенинг-сессии авангардной музыки, лекции, арт-практики, перформансы и джем-сейшны, шахматные турниры под braindance, маркеты физических аудионосителей. Нам интересно то, что происходит на стыке: между музыкой и игрой, слушанием и разговором, случайностью и системой.</p>'
+    + '<p>У нас есть кассетное дистро и собственный сборник <a href="#/m/vt01">VT01</a> — записи внеформатных музыкантов с Юга России.</p>'
+    + '<p>Мы <a href="#/m/collab">открыты для коллабораций</a>: саунд-артисты, фотографы, дизайнеры, видеографы, художники, кураторы, писатели, перформеры, крафтеры, лекторы. Если у вас есть интересная площадка или задумка, которую сложно реализовать в одиночку — напишите нам.</p>'
+    + '<p class="label">связь</p>'
+    + block({facts: [
+        ['канал', '<a href="https://t.me/volnotropy" target="_blank" rel="noopener">t.me/volnotropy</a>'],
+        ['почта', '<a href="mailto:volnotropy@yandex.com">volnotropy@yandex.com</a>'],
+        ['коллабы', '<a href="https://t.me/cirocular_now" target="_blank" rel="noopener">@cirocular_now</a>'],
+        ['рассылка', '<a href="https://volnotropy.eo.page/main" target="_blank" rel="noopener">тайная емейл-рассылка</a>']
+      ]})
+    + '<p class="note">Делали вместе с: <a href="https://t.me/radugacoffeekrd" target="_blank" rel="noopener">Радуга Кофе</a>, <a href="https://t.me/chainaya_shamanika" target="_blank" rel="noopener">Чайная Шаманика</a>.</p>'
+    + '</div></div>';
+}
+
+/* ---------- маршрутизация ----------
+   Страниц две: главная со всеми материалами и «о нас».
+   #/m/<slug> — та же главная, прокрученная к нужному материалу.
+   ------------------------------------------------------------------------- */
+const main = document.getElementById('main');
+let current = null;
+
+function show(view, name, title, nav){
+  if (current !== name){ main.innerHTML = view(); current = name; }
+  document.title = title;
+  document.querySelectorAll('.nav a[data-nav]').forEach(a => {
+    if (a.dataset.nav === nav) a.setAttribute('aria-current', 'page');
+    else a.removeAttribute('aria-current');
+  });
+}
+
+function route(){
+  const path = location.hash.replace(/^#\/?/, '');
+
+  if (path === 'about'){
+    show(viewAbout, 'about', 'о нас — волнотропы', 'about');
+    window.scrollTo(0, 0);
+    return;
+  }
+
+  const slug = path.startsWith('m/') ? path.slice(2) : null;
+  const m = slug ? MATERIALS.find(x => x.slug === slug) : null;
+  const wasRendered = current === 'index';
+
+  show(viewIndex, 'index', m ? m.title + ' — волнотропы' : 'волнотропы', 'index');
+
+  const target = m ? document.getElementById('m-' + m.slug) : null;
+  if (!target){ window.scrollTo(0, 0); return; }
+
+  // при первой отрисовке шрифты доезжают позже и сдвигают вёрстку,
+  // поэтому прокручиваем ещё раз после кадра и после загрузки шрифтов
+  const jump = smooth => target.scrollIntoView({block: 'start', behavior: smooth ? 'smooth' : 'auto'});
+  jump(wasRendered);
+  if (!wasRendered){
+    requestAnimationFrame(() => jump(false));
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => jump(false));
+  }
+}
+
+addEventListener('hashchange', route);
+route();
+</script>
+</body>
+</html>

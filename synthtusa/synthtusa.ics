@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//volnotropy//synthtusa//RU
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:synthtusa-2026-11-14@volnotropy.ru
+DTSTAMP:20261014T090000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Синтитуса — микрофестиваль локальной живой электроники
+LOCATION:ЗИП\, лит Х\, Краснодар
+DESCRIPTION:Микрофестиваль локальной живой электроники. Опен-колл открыт до 1 ноября. https://synthtusa.volnotropy.ru
+URL:https://synthtusa.volnotropy.ru
+END:VEVENT
+END:VCALENDAR

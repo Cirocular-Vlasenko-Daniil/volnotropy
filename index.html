@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>волнотропы</title>
+<meta name="description" content="волнотропы — внеформатные музыкальные и культурные события в Краснодаре и на Юге России.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&family=JetBrains+Mono:wght@400&display=swap">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABkElEQVR42u1ZQQ7EIAhU0v/00o/1Jf1YL31R97SJaUxVpCo4c9nTCowDUnAOAABAAdbjvNfjvEGCMAmkKfgvzlVDwLVv/gsy1CpAigTSXhOmJkCCBPUETKGA1C3XqAAKAAEGilzYI3xOQNiOPn81wks/M9e++fU475pbKbVdY8vnGg8DKyGF4xyHdFECwkBLA651NrSVY7tWab7ll1cqbSQJ/Z+XIohy/iiRzy0/dUvOo5xDRq3yOReT8p04srH0wUQj1ICe6UQWgq6ZJ1KrQtcj/6GAjBTx2nL/7eY5HerSo/0ciUSyEFBNGpipAVz/qWcFdpgI9ceiZYfnWk2EuN/f2gL/x4Gp8IyyfyXg2jdvvSeINkIzPH8x/8nyW/+MITaup69HTj0Dz/GNWsi/tZqeo/U3P5pub3I2RtI7iNSc07d6/rgq4BAS2zN0JUBqT8hZoKRs+5FX1xwfSu0tztl66pq1wiPcPuYBIKAjASl5a2mloYAR1lOqFaB9foAUGG1bCwVoJmCm/SIAAIAJ/AD7kBy+X8x6owAAAABJRU5ErkJggg==">
+<style>
+:root{
+  --paper:#FFFFFF;
+  --tint:#F5F8FA;
+  --ink:#232A2F;
+  --ink-mid:#66727B;
+  --ink-faint:#96A2AA;
+  --rule:#E2E8EC;
+  --rule-strong:#CBD5DB;
+  --accent:#2F8FCC;
+  --accent-deep:#1F6D9F;
+  --pad:2.5rem;
+  --logo:url("data:image/png;base64,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");
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E1418; --tint:#141C21; --ink:#DCE4E9; --ink-mid:#8E9BA4; --ink-faint:#65727A;
+    --rule:#1F282E; --rule-strong:#2E3A42; --accent:#5FB6EA; --accent-deep:#8ACFF8;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E1418; --tint:#141C21; --ink:#DCE4E9; --ink-mid:#8E9BA4; --ink-faint:#65727A;
+  --rule:#1F282E; --rule-strong:#2E3A42; --accent:#5FB6EA; --accent-deep:#8ACFF8;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Golos Text","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:var(--accent-deep);text-decoration:underline;text-underline-offset:.18em}
+.mono{
+  font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;font-variant-numeric:tabular-nums;
+}
+:focus-visible{outline:1px solid var(--accent);outline-offset:2px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:.6rem;top:.6rem;background:var(--paper);padding:.4rem .7rem;border:1px solid var(--accent);z-index:9}
+
+/* ---------- сетка: всё прижато к левому краю ---------- */
+main{padding-left:var(--pad);padding-bottom:1px}
+.col{max-width:42rem;padding-right:1.5rem}
+.wide{max-width:64rem;padding-right:1.5rem}
+
+/* ---------- шапка ---------- */
+.top{
+  position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--rule);
+  display:flex;align-items:center;justify-content:space-between;gap:1.25rem;
+  padding:.8rem 1.5rem .8rem var(--pad);
+}
+.brand{display:flex;align-items:center;gap:.55rem;color:var(--ink)}
+.brand:hover{color:var(--ink);text-decoration:none}
+.brand:hover .mark{color:var(--accent-deep)}
+.mark{
+  display:block;width:31px;height:28px;flex:none;color:var(--accent);background-color:currentColor;
+  -webkit-mask:var(--logo) center/contain no-repeat;mask:var(--logo) center/contain no-repeat;
+}
+.wordmark{font-size:.98rem;font-weight:500;letter-spacing:.01em}
+.nav{display:flex;gap:1.4rem;flex-wrap:wrap;justify-content:flex-end}
+.nav a{color:var(--ink-mid)}
+.nav a:hover{color:var(--accent);text-decoration:none}
+
+/* ---------- текст ---------- */
+.eyebrow{color:var(--ink-faint);margin:3rem 0 .8rem}
+h1{
+  font-size:clamp(1.45rem,3.4vw,1.95rem);font-weight:500;line-height:1.26;
+  letter-spacing:-.015em;text-wrap:balance;margin:2.4rem 0 0;max-width:30rem;
+}
+.kicker{font-size:1.05rem;color:var(--ink-mid);margin:.7rem 0 0;max-width:30rem}
+.prose{display:flex;flex-direction:column;gap:1.05rem;margin-top:1.6rem;max-width:33rem}
+.prose p{margin:0}
+.spec{display:flex;flex-direction:column;gap:1rem;margin:.2rem 0}
+.spec dt{color:var(--ink-faint);margin-bottom:.1rem}
+.spec dd{margin:0}
+.times{display:flex;flex-direction:column;gap:.4rem;margin:.1rem 0}
+.times .t{color:var(--ink-faint);margin-right:.85rem}
+.list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.65rem}
+.list li{padding-left:1.1rem;position:relative}
+.list li::before{content:"";position:absolute;left:0;top:.68em;width:5px;height:5px;background:var(--accent)}
+.note{color:var(--ink-mid)}
+.act{
+  display:inline-block;align-self:flex-start;margin-top:.4rem;
+  padding:.45rem 1rem;border:1px solid var(--accent);color:var(--accent);
+}
+.act:hover{background:var(--accent);color:var(--paper);text-decoration:none}
+.back{display:inline-block;color:var(--ink-mid);margin:1.9rem 0 0}
+.back:hover{color:var(--accent);text-decoration:none}
+
+/* ---------- плитки проектов ---------- */
+.tiles{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  max-width:50rem;margin-right:1.5rem;
+  border-top:1px solid var(--rule-strong);border-left:1px solid var(--rule-strong);
+}
+.tile{
+  aspect-ratio:1/1;display:flex;flex-direction:column;
+  border-right:1px solid var(--rule-strong);border-bottom:1px solid var(--rule-strong);
+  background:var(--tint);color:var(--ink);
+  transition:background .15s ease,color .15s ease;
+}
+.tile:hover{background:var(--paper);color:var(--accent);text-decoration:none}
+.tile img{display:block;width:100%;height:52%;object-fit:cover;background:var(--rule)}
+.tile .body{display:flex;flex-direction:column;flex:1;padding:.85rem .95rem;gap:.4rem}
+.tile .k{color:var(--ink-faint)}
+.tile .t{font-size:1.05rem;line-height:1.3}
+.tile .d{font-size:.88rem;line-height:1.45;color:var(--ink-mid)}
+.tile .go{margin-top:auto;color:var(--ink-faint)}
+.tile:hover .k,.tile:hover .d,.tile:hover .go{color:var(--accent)}
+
+/* ---------- фотографии ---------- */
+.gallery{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:1px;
+  background:var(--rule);max-width:64rem;margin:0 1.5rem 0 0;
+  border:1px solid var(--rule);
+}
+.gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--tint)}
+.photo-empty{color:var(--ink-faint);border:1px dashed var(--rule-strong);padding:1.6rem;max-width:33rem}
+
+/* ---------- подвал ---------- */
+.foot{
+  display:flex;justify-content:space-between;gap:.5rem 1.6rem;flex-wrap:wrap;color:var(--ink-faint);
+  border-top:1px solid var(--rule);margin-top:4rem;padding:1.1rem 1.5rem 2.6rem var(--pad);
+}
+.foot a{color:var(--ink-mid)}
+.foot a:hover{color:var(--accent);text-decoration:none}
+.foot .set{display:flex;gap:1.4rem;flex-wrap:wrap}
+
+@media (max-width:600px){
+  :root{--pad:1.25rem}
+  body{font-size:16px}
+  .tiles{grid-template-columns:1fr}
+  .tile{aspect-ratio:auto;min-height:180px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip mono" href="#main">к содержанию</a>
+
+<header class="top">
+  <a class="brand" href="index.html">
+    <span class="mark" aria-hidden="true"></span>
+    <span class="wordmark">волнотропы</span>
+  </a>
+  <nav class="nav mono"><a href="https://t.me/volnotropy" target="_blank" rel="noopener">телеграм</a></nav>
+</header>
+
+<main id="main">
+
+<div class="col">
+  <h1>Внеформатные музыкальные и культурные события в Краснодаре и на Юге России.</h1>
+  <div class="prose">
+    <p>волнотропы — сообщество из Краснодара. Мы делаем листенинг-сессии авангардной музыки, лекции, перформансы и джем-сейшны, турниры под электронную музыку и маркеты физических аудионосителей.</p>
+    <p>Нам интересно то, что происходит на стыке: между музыкой и игрой, слушанием и разговором, случайностью и системой. Мы собираем вместе музыкантов, художников и всех, кому важно то, что остаётся за рамками популярного.</p>
+    <p>У нас есть кассетное дистро и собственный сборник VT01 — записи внеформатных музыкантов с Юга России.</p>
+  </div>
+</div>
+
+<p class="eyebrow mono">проекты</p>
+<div class="tiles"><a class="tile" href="synthtusa/index.html"><img src="photos/synthtusa.jpg" alt="" loading="lazy" width="800" height="600"><span class="body"><span class="k mono">фестиваль</span><span class="t">Синтитуса</span><span class="d">Микрофестиваль локальной живой электроники. 14 ноября, опен-колл открыт.</span><span class="go mono">подробнее →</span></span></a><a class="tile" href="vt01/index.html"><img src="photos/vt01.jpg" alt="" loading="lazy" width="800" height="600"><span class="body"><span class="k mono">релиз</span><span class="t">VT01 и дистро</span><span class="d">Первый кассетный сборник волнотропов и дистро ру-андеграунда.</span><span class="go mono">подробнее →</span></span></a><a class="tile" href="idm-chess/index.html"><img src="photos/idm-chess.jpg" alt="" loading="lazy" width="800" height="600"><span class="body"><span class="k mono">ивент</span><span class="t">IDM Шахматы</span><span class="d">Шахматный турнир под braindance, лекция и маркет носителей.</span><span class="go mono">подробнее →</span></span></a><a class="tile" href="listening/index.html"><img src="photos/listening.jpg" alt="" loading="lazy" width="800" height="600"><span class="body"><span class="k mono">формат</span><span class="t">Листенинг-сессии</span><span class="d">Совместное слушание, лекции, арт-практики и джемы.</span><span class="go mono">подробнее →</span></span></a></div>
+
+<div class="col">
+  <p class="eyebrow mono">связь</p>
+  <dl class="spec"><div><dt class="mono">канал</dt><dd><a href="https://t.me/volnotropy" target="_blank" rel="noopener">t.me/volnotropy</a></dd></div><div><dt class="mono">почта</dt><dd><a href="mailto:volnotropy@yandex.com">volnotropy@yandex.com</a></dd></div><div><dt class="mono">сотрудничество</dt><dd><a href="https://t.me/cirocular_now" target="_blank" rel="noopener">@cirocular_now</a></dd></div><div><dt class="mono">рассылка</dt><dd><a href="https://volnotropy.eo.page/main" target="_blank" rel="noopener">тайная емейл-рассылка</a></dd></div></dl>
+  <div class="prose">
+    <p class="note">Мы открыты для коллабораций: саунд-артисты, фотографы, дизайнеры, видеографы, художники, кураторы, писатели, перформеры, крафтеры, лекторы. Если у вас есть площадка или задумка, которую сложно реализовать в одиночку — напишите.</p>
+  </div>
+</div>
+
+</main>
+
+<footer class="foot mono">
+  <span>© 2026 волнотропы · краснодар</span>
+  <span class="set">
+    <a href="https://t.me/volnotropy" target="_blank" rel="noopener">телеграм</a>
+    <a href="https://volnotropy.eo.page/main" target="_blank" rel="noopener">рассылка</a>
+    <a href="mailto:volnotropy@yandex.com">почта</a>
+  </span>
+</footer>
+<script>
+/* фотографии: кладите файлы в папку photos/ и перечисляйте их выше.
+   Если файла нет, картинка просто не показывается. */
+(function(){
+  document.querySelectorAll('.gallery').forEach(function(g){
+    var imgs = Array.prototype.slice.call(g.querySelectorAll('img'));
+    var left = imgs.length;
+    imgs.forEach(function(im){
+      im.addEventListener('error', function(){
+        im.remove();
+        if (--left === 0){
+          var p = document.createElement('p');
+          p.className = 'photo-empty mono';
+          p.textContent = 'фотографии скоро';
+          g.replaceWith(p);
+        }
+      });
+    });
+  });
+  document.querySelectorAll('.tile img').forEach(function(im){
+    im.addEventListener('error', function(){ im.remove(); });
+  });
+})();
+</script>
+</body>
+</html>

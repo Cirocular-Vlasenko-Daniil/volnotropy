@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Опен-колл — Синтитуса</title>
+<meta name="description" content="Опен-колл Синтитусы: 7–9 слотов по 30 минут, заявки до 1 ноября 2026.">
+<meta property="og:title" content="Опен-колл Синтитусы — до 1 ноября">
+<meta property="og:description" content="7–9 слотов по 30 минут: сет и микро-презентация. Заявки до 1 ноября.">
+<meta property="og:image" content="https://volnotropy.ru/synthtusa/og.png">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M3 24 L11 8 L11 24 L19 8 L19 24 L27 8' fill='none' stroke='%232F8FCC' stroke-width='2.8'/%3E%3C/svg%3E">
+<style>
+:root{
+  --paper:#FFFFFF;
+  --tint:#F3F7FA;
+  --ink:#1C2328;
+  --muted:#67737B;
+  --faint:#9AA5AC;
+  --rule:#E2E9ED;
+  --rule-strong:#C9D4DB;
+  --accent:#2F8FCC;
+  --accent-deep:#1F6D9F;
+  --pad:2.5rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E1418; --tint:#151D22; --ink:#DEE6EB; --muted:#8E9BA4; --faint:#65727A;
+    --rule:#1F282E; --rule-strong:#2E3A42; --accent:#5FB6EA; --accent-deep:#8ACFF8;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E1418; --tint:#151D22; --ink:#DEE6EB; --muted:#8E9BA4; --faint:#65727A;
+  --rule:#1F282E; --rule-strong:#2E3A42; --accent:#5FB6EA; --accent-deep:#8ACFF8;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:14.5px;line-height:1.72;-webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:var(--accent-deep);text-decoration:underline;text-underline-offset:.2em}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:.6rem;top:.6rem;background:var(--paper);padding:.4rem .7rem;border:1px solid var(--accent);z-index:9}
+
+.wrap{width:min(100%,58rem);margin-inline:auto;padding:0 var(--pad)}
+.col{max-width:40rem;margin-inline:auto}
+
+/* ---------- плакат ---------- */
+.poster{padding-top:3.2rem;padding-bottom:1rem}
+.logowrap{margin:0}
+#logo{display:block;max-width:min(100%,34rem);height:auto}
+.wordmark{
+  font-family:Oswald,"Arial Narrow",Impact,sans-serif;font-weight:700;
+  font-size:clamp(2.8rem,12vw,8rem);line-height:.92;letter-spacing:.005em;
+  text-transform:uppercase;margin:0;
+}
+.tagline{color:var(--muted);text-transform:uppercase;letter-spacing:.2em;font-size:11px;margin:1.1rem 0 0}
+.date{
+  font-family:Oswald,"Arial Narrow",Impact,sans-serif;font-weight:700;
+  font-size:clamp(3.4rem,16vw,11rem);line-height:.86;letter-spacing:-.01em;
+  text-transform:uppercase;margin:2.2rem 0 0;color:var(--accent);
+}
+.date .year{display:block;font-weight:400;font-size:.26em;letter-spacing:.3em;color:var(--ink);margin-top:.5em}
+.where{margin:1.6rem 0 0;font-size:13px;text-transform:uppercase;letter-spacing:.14em}
+.where span{display:block;color:var(--muted);letter-spacing:.1em;margin-top:.3rem;text-transform:none;font-size:13px}
+
+/* ---------- кнопки ---------- */
+.btn{
+  display:inline-block;background:var(--accent);color:var(--paper);
+  border:1px solid var(--accent);padding:.7rem 1.5rem;
+  font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;
+}
+.btn:hover{background:var(--accent-deep);border-color:var(--accent-deep);color:var(--paper);text-decoration:none}
+.btn.big{
+  padding:1.5rem 2.4rem;font-size:clamp(1rem,3.2vw,1.4rem);letter-spacing:.1em;
+  width:100%;max-width:34rem;text-align:center;
+  font-family:Oswald,sans-serif;font-weight:500;
+}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn.ghost:hover{background:var(--accent);color:var(--paper)}
+.btn.off{background:transparent;color:var(--muted);border-color:var(--rule-strong)}
+.btn.off:hover{background:transparent;color:var(--accent);border-color:var(--accent)}
+.topbtn{margin:2rem 0 0}
+
+/* ---------- разделы ---------- */
+section{padding-top:3.8rem}
+.head{border-top:1px solid var(--rule);padding-top:1rem;margin:0 0 1.3rem}
+.head .eyebrow{display:block;color:var(--faint);font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:.5rem}
+.head h2{
+  font-family:Oswald,"Arial Narrow",Impact,sans-serif;font-weight:500;
+  font-size:clamp(1.45rem,4.4vw,2.2rem);line-height:1.08;letter-spacing:.01em;
+  text-transform:uppercase;margin:0;
+}
+h1.title{
+  font-family:Oswald,"Arial Narrow",Impact,sans-serif;font-weight:700;
+  font-size:clamp(2rem,7vw,3.4rem);line-height:1;letter-spacing:.01em;
+  text-transform:uppercase;margin:1.4rem 0 0;
+}
+p{margin:0 0 1.05rem}
+.lead{font-size:16px;line-height:1.6}
+.muted{color:var(--muted)}
+ul{list-style:none;margin:0 0 1.3rem;padding:0}
+li{padding-left:1.4rem;position:relative;margin-bottom:.5rem}
+li::before{content:"";position:absolute;left:0;top:.7em;width:5px;height:5px;background:var(--accent)}
+.spec{display:flex;flex-direction:column;gap:.9rem;margin:0 0 1.4rem}
+.spec dt{color:var(--faint);font-size:11px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.15rem}
+.spec dd{margin:0}
+.back{display:inline-block;color:var(--muted);font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin:1.8rem 0 0}
+.back:hover{color:var(--accent);text-decoration:none}
+
+/* ---------- форма ---------- */
+form{margin:1.6rem 0 0;max-width:34rem}
+.field{display:flex;flex-direction:column;margin-bottom:1.5rem}
+label{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:.4rem}
+label .req{color:var(--accent)}
+input,textarea,select{
+  font:inherit;color:var(--ink);background:transparent;
+  border:0;border-bottom:1px solid var(--rule-strong);padding:.5rem 0;
+}
+input:focus,textarea:focus,select:focus{outline:0;border-bottom-color:var(--accent)}
+textarea{resize:vertical;min-height:5.5rem}
+select{appearance:none}
+select option{background:var(--paper);color:var(--ink)}
+.hint{font-size:12px;color:var(--muted);margin-top:.4rem}
+button{font:inherit;cursor:pointer}
+button.btn{font-family:inherit}
+.sent{border:1px solid var(--accent);padding:1.4rem;max-width:34rem;color:var(--accent)}
+.err{color:#D14A2B;font-size:12.5px;margin-top:.5rem}
+
+/* ---------- организаторы ---------- */
+.people{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.5rem;max-width:44rem}
+.person{display:flex;flex-direction:column}
+.ph{position:relative;aspect-ratio:1/1;background:var(--tint);border:1px solid var(--rule);margin-bottom:.9rem}
+.ph::after{
+  content:"фото";position:absolute;left:.8rem;bottom:.7rem;
+  color:var(--faint);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;
+}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.person .name{font-family:Oswald,sans-serif;font-weight:500;font-size:1.2rem;text-transform:uppercase;letter-spacing:.02em;margin:0 0 .3rem}
+.person .role{color:var(--muted);font-size:13px;margin:0 0 .6rem}
+
+.placeholder{border:1px dashed var(--accent);padding:1.2rem 1.3rem;color:var(--muted);max-width:40rem}
+.placeholder b{color:var(--accent);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:11px;display:block;margin-bottom:.6rem}
+.placeholder p:last-child{margin-bottom:0}
+
+footer{
+  margin-top:4.5rem;border-top:1px solid var(--rule);padding:1.3rem var(--pad) 3rem;
+  display:flex;justify-content:center;gap:.6rem 2rem;flex-wrap:wrap;text-align:center;
+  color:var(--faint);font-size:12px;
+}
+footer a{color:var(--muted)}
+footer a:hover{color:var(--accent);text-decoration:none}
+footer .set{display:flex;gap:1.5rem;flex-wrap:wrap}
+
+@media (max-width:620px){
+  :root{--pad:1.25rem}
+  .people{grid-template-columns:1fr;gap:2rem}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">к содержанию</a>
+<main id="main">
+
+<header class="wrap" style="padding-top:1.4rem;text-align:center">
+  <p style="text-align:left"><a class="back" href="../index.html">← Синтитуса</a></p>
+  <div class="col">
+    <h1 class="title">Опен-колл</h1>
+    <p class="lead muted" style="margin-top:1rem">Синтитуса собирается из заявок. Если вы делаете живую электронику на Юге — присылайте свою. Мы отвечаем каждому.</p>
+  </div>
+</header>
+
+<section class="wrap col" style="padding-top:2.6rem">
+  <div class="head"><span class="eyebrow">коротко</span><h2>Условия</h2></div>
+  <dl class="spec">
+    <div><dt>дедлайн</dt><dd>1 ноября 2026</dd></div>
+    <div><dt>фестиваль</dt><dd>14 ноября 2026, ЗИП лит Х, Краснодар</dd></div>
+    <div><dt>слоты</dt><dd>7–9 слотов по 30 минут: сет и микро-презентация</dd></div>
+    <div><dt>кто может подать</dt><dd>любой проект с живой электроникой — соло, дуэт или вчетвером</dd></div>
+    <div><dt>опыт</dt><dd>не нужен: ни релизов, ни прошлых выступлений</dd></div>
+  </dl>
+</section>
+
+<section class="wrap col">
+  <div class="head"><span class="eyebrow">что это значит</span><h2>Формат выступления</h2></div>
+  <p>Каждому участнику достаётся одинаковый слот в 30 минут. Внутри него — ваш сет и микро-презентация: короткий рассказ о том, как и почему вы делаете свою музыку.</p>
+  <p>Презентацию не нужно готовить в одиночку. С каждым участником работает куратор: помогает выбрать, о чём говорить, и собрать рассказ так, чтобы он был интересен слушателю, а не превратился в перечисление оборудования.</p>
+  <p>Живой электроникой мы считаем всё, что звучит здесь и сейчас: синтезаторы, модульные системы, драм-машины, самодельные инструменты, ноутбук как инструмент.</p>
+</section>
+
+<section class="wrap col">
+  <div class="head"><span class="eyebrow">перед отправкой</span><h2>Что прислать</h2></div>
+  <ul>
+    <li>Ссылку на музыку — подойдёт и запись репетиции на телефон, нам важно услышать, что вы делаете.</li>
+    <li>Коротко — на чём играете: это нужно, чтобы заранее собрать сцену.</li>
+    <li>Пару предложений о своём подходе. Если пока не формулируется — оставьте поле пустым, разберёмся вместе с куратором.</li>
+    <li>Контакт, по которому вы правда отвечаете.</li>
+  </ul>
+  <p class="muted">Что дальше: смотрим заявки по мере поступления и отвечаем всем до 5 ноября. С теми, кто играет, куратор связывается заранее.</p>
+</section>
+
+<section class="wrap col">
+  <div class="head"><span class="eyebrow">заявка</span><h2>Анкета</h2></div>
+  <form id="apply" novalidate>
+    <div class="field">
+      <label for="f-name">Проект или имя <span class="req">*</span></label>
+      <input id="f-name" name="Проект" type="text" autocomplete="name" required>
+    </div>
+    <div class="field">
+      <label for="f-city">Город <span class="req">*</span></label>
+      <input id="f-city" name="Город" type="text" required>
+    </div>
+    <div class="field">
+      <label for="f-link">Ссылка на музыку <span class="req">*</span></label>
+      <input id="f-link" name="Музыка" type="text" placeholder="bandcamp, soundcloud, телеграм, что угодно" required>
+    </div>
+    <div class="field">
+      <label for="f-setup">На чём играете <span class="req">*</span></label>
+      <input id="f-setup" name="Сетап" type="text" placeholder="синтезаторы, драм-машина, педали, ноутбук…" required>
+    </div>
+    <div class="field">
+      <label for="f-time">Сколько нужно времени</label>
+      <select id="f-time" name="Время">
+        <option>30 минут — сет и презентация</option>
+        <option>20 минут</option>
+        <option>15 минут</option>
+        <option>пока не знаю</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="f-about">О чём расскажете</label>
+      <textarea id="f-about" name="Презентация" placeholder="Что для вас главное в вашей музыке, как вы её делаете, что хотите показать"></textarea>
+      <p class="hint">Можно оставить пустым — куратор поможет собрать рассказ.</p>
+    </div>
+    <div class="field">
+      <label for="f-contact">Как с вами связаться <span class="req">*</span></label>
+      <input id="f-contact" name="Контакт" type="text" placeholder="@телеграм или почта" required>
+    </div>
+    <p><button class="btn" type="submit">Отправить заявку</button></p>
+    <p class="err" id="formerr" hidden></p>
+  </form>
+</section>
+
+</main>
+
+<footer>
+  <span>Синтитуса — проект <a href="../../index.html">волнотропов</a>, Краснодар</span>
+  <span class="set">
+    <a href="https://t.me/volnotropy" target="_blank" rel="noopener">телеграм</a>
+    <a href="mailto:volnotropy@yandex.com">почта</a>
+    <a href="../synthtusa.ics" download>в календарь</a>
+  </span>
+</footer>
+
+<script>
+/* ==========================================================================
+   КУДА ПРИХОДЯТ ЗАЯВКИ
+
+   Вставьте адрес приёмника формы — и заявки начнут падать туда прямо
+   с сайта. Подойдёт любой сервис, принимающий POST с JSON:
+
+     Web3Forms  https://api.web3forms.com/submit   (нужен access_key)
+     Formspree  https://formspree.io/f/xxxxxxxx
+     Getform    https://getform.io/f/xxxxxxxx
+
+   Пока строка пустая, кнопка собирает заявку в письмо и открывает почту.
+   ========================================================================== */
+const FORM_ENDPOINT = '';
+const WEB3FORMS_KEY = '';
+const FALLBACK_EMAIL = 'volnotropy@yandex.com';
+
+(function(){
+  const form = document.getElementById('apply');
+  const err = document.getElementById('formerr');
+  if (!form) return;
+
+  function values(){
+    const out = {};
+    form.querySelectorAll('input, textarea, select').forEach(function(el){
+      out[el.name] = el.value.trim();
+    });
+    return out;
+  }
+  function asText(v){
+    return Object.keys(v).map(function(k){ return k + ': ' + (v[k] || '—'); }).join('\n');
+  }
+  function done(){
+    const box = document.createElement('div');
+    box.className = 'sent';
+    box.innerHTML = '[ заявка отправлена ]<br><br>Спасибо. Ответим всем до 5 ноября — ' +
+                    'следите за почтой или телеграмом, которые вы указали.';
+    form.replaceWith(box);
+    box.setAttribute('tabindex', '-1');
+    box.focus();
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    err.hidden = true;
+
+    const missing = [];
+    form.querySelectorAll('[required]').forEach(function(el){
+      if (!el.value.trim()) missing.push(el.previousElementSibling.textContent.replace('*','').trim());
+    });
+    if (missing.length){
+      err.textContent = 'Заполните: ' + missing.join(', ').toLowerCase();
+      err.hidden = false;
+      form.querySelector('[required]').focus();
+      return;
+    }
+
+    const v = values();
+
+    if (!FORM_ENDPOINT){
+      const body = encodeURIComponent('Заявка на Синтитусу\n\n' + asText(v));
+      window.location.href = 'mailto:' + FALLBACK_EMAIL +
+        '?subject=' + encodeURIComponent('Заявка на Синтитусу — ' + v['Проект']) + '&body=' + body;
+      done();
+      return;
+    }
+
+    const payload = Object.assign({}, v, {subject: 'Заявка на Синтитусу — ' + v['Проект']});
+    if (WEB3FORMS_KEY) payload.access_key = WEB3FORMS_KEY;
+
+    const btn = form.querySelector('button[type=submit]');
+    btn.disabled = true;
+    btn.textContent = 'Отправляем…';
+
+    fetch(FORM_ENDPOINT, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+      body: JSON.stringify(payload)
+    }).then(function(r){
+      if (!r.ok) throw new Error(r.status);
+      done();
+    }).catch(function(){
+      btn.disabled = false;
+      btn.textContent = 'Отправить заявку';
+      err.innerHTML = 'Не получилось отправить. Напишите нам в телеграм ' +
+        '<a href="https://t.me/cirocular_now" target="_blank" rel="noopener">@cirocular_now</a> — заявку примем там.';
+      err.hidden = false;
+    });
+  });
+})();
+</script>
+</body>
+</html>
