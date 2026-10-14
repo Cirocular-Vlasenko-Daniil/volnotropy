@@ -11,21 +11,20 @@
 
 ## 1. Основной сайт → volnotropy.ru
 
-**Репозиторий.** Создайте на GitHub пустой репозиторий, например `volnotropy`
-(публичный — для бесплатных Pages на личном аккаунте это обязательно).
-Затем из папки сайта:
+**Уже сделано:** репозиторий <https://github.com/Cirocular-Vlasenko-Daniil/volnotropy>
+залит, Pages включены (ветка `main`, папка root). Сайт работает:
 
-```bash
-git remote add origin https://github.com/Cirocular-Vlasenko-Daniil/volnotropy.git
-git push -u origin main
-```
+**<http://10minutezine.com/volnotropy/>**
 
-**Включить Pages.** Settings → Pages → Build and deployment → Source: *Deploy from
-a branch*, ветка `main`, папка `/ (root)`. Через минуту сайт поднимется по адресу
-`https://cirocular-vlasenko-daniil.github.io/volnotropy/` — на этом этапе всё уже
-работает и можно проверить ссылки.
+Адрес такой, потому что у репозитория `Cirocular-Vlasenko-Daniil.github.io`
+прописан домен `10minutezine.com`, а проектные страницы наследуют домен аккаунта.
+`cirocular-vlasenko-daniil.github.io/volnotropy/` тоже работает — просто
+перенаправляет туда же. Как только у волнотропов появится свой домен, сайт
+переедет на него, и зин перестанет быть «родителем» в адресе.
 
-**Домен.** Settings → Pages → Custom domain → `volnotropy.ru` → Save.
+Обновления выкладываются обычным `git push` — Pages пересобирает сайт сам.
+
+**Домен (осталось сделать).** Settings → Pages → Custom domain → `volnotropy.ru` → Save.
 GitHub сам создаст в репозитории файл `CNAME` — руками его добавлять не нужно.
 
 **DNS у регистратора** (для `volnotropy.ru`):
